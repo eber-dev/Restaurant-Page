@@ -28,7 +28,8 @@ header {
 }
 
 .encabezado > img {
-    height: 3rem;
+    height: 3.5rem;
+    filter: invert();
 }
 
 nav {
@@ -48,4 +49,70 @@ button:hover {
     display: flex;
     min-height: calc(100vh - 6rem);
     background-color: #c89a3c;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuadro {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.cuadro > img {
+    height: 49rem;
+    width: auto;
+}
+
+.texto {
+    position: absolute;
+    color: white;
+    margin-top: 6%;
+}
+
+.texto > h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.texto > h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.texto > p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.menutablero {
+    width: 89rem;
+    min-height: calc(100vh - 6rem);
+    border: 1px solid black;
+    background-color: white;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menutablero > h1 {
+    font-size: 3rem;
+}
+
+.menutablero > h2 {
+    font-size: 1.5rem;
+}
+
+.carta_entrada {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid black;
+    grid-auto-flow: column;
+    height: 5px;
 }
