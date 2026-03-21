@@ -48,7 +48,7 @@ function cargarentrada() {
     anticuchoimagen.src = anticuchos;
     const anticuchotexto = document.createElement("p");
     anticuchotexto.textContent =
-        "El anticucho es uno de los platos más emblemáticos de la gastronomía peruana. Consiste en trozos de carne —tradicionalmente corazón de res— marinados en una mezcla de ají panca, ajo, vinagre y especias, luego ensartados en brochetas y cocinados a la parrilla. Es una receta con raíces históricas que combina tradición y sabor en cada bocado.";
+        "El anticucho es uno de los platos más emblemáticos de la gastronomía peruana. Consiste en trozos de carne tradicionalmente corazón de res marinados en una mezcla de ají panca, ajo, vinagre y especias, luego ensartados en brochetas y cocinados a la parrilla. Es una receta con raíces históricas que combina tradición y sabor en cada bocado.";
 
     const pedirentrada2 = document.createElement("div");
     const precio2 = document.createElement("p");
@@ -74,6 +74,7 @@ function cargarentrada() {
     const totalbotones = [boton1, boton2, boton3];
     totalbotones.forEach((elemento) => {
         const img = document.createElement("img");
+        img.classList.add("iconopedir");
         img.src = roomservice;
         elemento.appendChild(img);
     });
