@@ -99,14 +99,17 @@ button:hover {
     margin-top: 1%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .menutablero > h1 {
     font-size: 3rem;
+    text-align: center;
 }
 
 .menutablero > h2 {
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .carta_entrada {
@@ -114,5 +117,51 @@ button:hover {
     grid-template-columns: repeat(3, 1fr);
     border: 1px solid black;
     grid-auto-flow: column;
-    height: 5px;
+    gap: 1.5rem;
+    margin-inline: 1.5rem;
+}
+
+.entradas {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid violet;
+    overflow: hidden;
+}
+
+.entradas > img {
+    height: 15rem;
+}
+
+.entradas > p {
+    font-size: 1.1rem;
+    text-align: justify;
+    margin-inline: 1rem;
+}
+
+.pedidosentrada {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 1rem;
+    border: 1px solid pink;
+    margin-top: auto;
+    align-items: center;
+}
+
+.pedidosentrada > p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.pedidosentrada > button {
+    height: 3.2rem;
+    width: 3.2rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconopedir {
+    height: 2.3rem;
+    width: auto;
 }
