@@ -52,6 +52,11 @@ export function loadContact() {
     const boton = document.createElement("button");
     boton.textContent = "Enviar";
 
+    boton.addEventListener("click", (e) => {
+        e.preventDefault();
+        alert("Se envio el formulario de contacto");
+    });
+
     container.appendChild(cuadrocontacto);
     cuadrocontacto.appendChild(cuadromapa);
     cuadromapa.appendChild(horario);
