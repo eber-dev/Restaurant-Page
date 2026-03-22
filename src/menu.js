@@ -8,6 +8,9 @@ import pato from "./images/arrozpato.jpg";
 import carapulcra from "./images/carapulcra.jpg";
 import pollo from "./images/polloalabrasa.jpg";
 import marisco from "./images/arrozmariscos.jpg";
+import chicha from "./images/chicha.jpeg";
+import limonada from "./images/limonada.jpg";
+import emoliente from "./images/emoliente.jpg";
 
 export function loadMenu() {
     const container = document.getElementById("content");
@@ -22,7 +25,7 @@ export function loadMenu() {
     fondos.textContent = "FONDOS";
     let funcionfondos = cargarfondos();
     const postres = document.createElement("h2");
-    postres.textContent = "POSTRES";
+    postres.textContent = "BEBIDAS";
     let funcionpostres = cargarpostre();
     container.appendChild(menu);
     menu.appendChild(tituloprincipal);
@@ -234,12 +237,67 @@ function cargarpostre() {
     const carta_postres = document.createElement("div");
     carta_postres.classList.add("carta_postres");
     const postre1 = document.createElement("div");
+    const chichaimagen = new Image();
+    chichaimagen.src = chicha;
+    const chichatexto = document.createElement("p");
+    chichatexto.textContent =
+        "Bebida tradicional peruana elaborada con maíz morado hervido con piña, canela y clavo de olor. Refrescante, ligeramente dulce y con un toque especiado que la hace única y muy representativa del Perú.";
+
+    const pedirbebida1 = document.createElement("div");
+    const precio1 = document.createElement("p");
+    precio1.textContent = "S/12";
+    const boton1 = document.createElement("button");
+
     const postre2 = document.createElement("div");
+    const limonadaimagen = new Image();
+    limonadaimagen.src = limonada;
+    const limonadatexto = document.createElement("p");
+    limonadatexto.textContent =
+        "Refrescante bebida preparada con limón peruano, conocido por su intensidad y aroma. Servida bien fría, es ideal para acompañar cualquier plato por su frescura y acidez equilibrada.";
+    const pedirbebida2 = document.createElement("div");
+    const precio2 = document.createElement("p");
+    precio2.textContent = "S/12";
+    const boton2 = document.createElement("button");
+
     const postre3 = document.createElement("div");
+    const emolienteimagen = new Image();
+    emolienteimagen.src = emoliente;
+    const emolientetexto = document.createElement("p");
+    emolientetexto.textContent =
+        "Bebida caliente tradicional preparada con hierbas, cebada y linaza. Reconocida por sus propiedades digestivas y su sabor reconfortante, perfecta para cualquier momento del día.";
+    const pedirbebida3 = document.createElement("div");
+    const precio3 = document.createElement("p");
+    precio3.textContent = "S/12";
+    const boton3 = document.createElement("button");
+
+    const totalbeber = [pedirbebida1, pedirbebida2, pedirbebida3];
+    totalbeber.forEach((elemento) => elemento.classList.add("pedidosbebida"));
     const totalpostres = [postre1, postre2, postre3];
     totalpostres.forEach((elemento) => elemento.classList.add("postres"));
+    const totalbotones = [boton1, boton2, boton3];
+    totalbotones.forEach((elemento) => {
+        const img = document.createElement("img");
+        img.classList.add("iconopedir");
+        img.src = roomservice;
+        elemento.appendChild(img);
+    });
     carta_postres.appendChild(postre1);
+    postre1.appendChild(chichaimagen);
+    postre1.appendChild(chichatexto);
+    postre1.appendChild(pedirbebida1);
+    pedirbebida1.appendChild(precio1);
+    pedirbebida1.appendChild(boton1);
     carta_postres.appendChild(postre2);
+    postre2.appendChild(limonadaimagen);
+    postre2.appendChild(limonadatexto);
+    postre2.appendChild(pedirbebida2);
+    pedirbebida2.appendChild(precio2);
+    pedirbebida2.appendChild(boton2);
     carta_postres.appendChild(postre3);
+    postre3.appendChild(emolienteimagen);
+    postre3.appendChild(emolientetexto);
+    postre3.appendChild(pedirbebida3);
+    pedirbebida3.appendChild(precio3);
+    pedirbebida3.appendChild(boton3);
     return carta_postres;
 }
