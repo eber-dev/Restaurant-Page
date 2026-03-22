@@ -129,7 +129,7 @@ button:hover {
 }
 
 .entradas > img {
-    height: 15rem;
+    height: 16rem;
 }
 
 .entradas > p {
@@ -184,7 +184,7 @@ button:hover {
 }
 
 .fondos > img {
-    height: 15rem;
+    height: 16rem;
 }
 
 .fondos > p {
@@ -208,6 +208,55 @@ button:hover {
 }
 
 .pedidosfondo > button {
+    height: 3.2rem;
+    width: 3.2rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carta_postres {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid black;
+    grid-auto-flow: column;
+    gap: 1.5rem;
+    margin-inline: 1.5rem;
+}
+
+.postres {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid violet;
+    overflow: hidden;
+}
+
+.postres > img {
+    height: 16rem;
+}
+
+.postres > p {
+    font-size: 1.1rem;
+    text-align: justify;
+    margin-inline: 1rem;
+}
+
+.pedidosbebida {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 1rem;
+    border: 1px solid pink;
+    margin-top: auto;
+    align-items: center;
+}
+
+.pedidosbebida > p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.pedidosbebida > button {
     height: 3.2rem;
     width: 3.2rem;
     overflow: hidden;
