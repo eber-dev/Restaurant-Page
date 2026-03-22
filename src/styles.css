@@ -93,13 +93,14 @@ button:hover {
 
 .menutablero {
     width: 89rem;
-    min-height: calc(100vh - 6rem);
     border: 1px solid black;
     background-color: white;
     margin-top: 1%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    margin-bottom: 2%;
+    border-radius: 1rem;
 }
 
 .menutablero > h1 {
@@ -115,17 +116,19 @@ button:hover {
 .carta_entrada {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 1px solid black;
     grid-auto-flow: column;
     gap: 1.5rem;
     margin-inline: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .entradas {
     display: flex;
     flex-direction: column;
-    border: 1px solid violet;
+    border: 1px solid blue;
     overflow: hidden;
+    border-radius: 1rem;
 }
 
 .entradas > img {
@@ -142,7 +145,6 @@ button:hover {
     display: flex;
     justify-content: space-between;
     margin-inline: 1rem;
-    border: 1px solid pink;
     margin-top: auto;
     align-items: center;
 }
@@ -170,17 +172,19 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    border: 1px solid black;
     grid-auto-flow: column;
     gap: 1.5rem;
     margin-inline: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .fondos {
     display: flex;
     flex-direction: column;
-    border: 1px solid violet;
+    border: 1px solid green;
     overflow: hidden;
+    border-radius: 1rem;
 }
 
 .fondos > img {
@@ -197,7 +201,6 @@ button:hover {
     display: flex;
     justify-content: space-between;
     margin-inline: 1rem;
-    border: 1px solid pink;
     margin-top: auto;
     align-items: center;
 }
@@ -219,17 +222,19 @@ button:hover {
 .carta_postres {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 1px solid black;
     grid-auto-flow: column;
     gap: 1.5rem;
     margin-inline: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .postres {
     display: flex;
     flex-direction: column;
-    border: 1px solid violet;
+    border: 1px solid orange;
     overflow: hidden;
+    border-radius: 1rem;
 }
 
 .postres > img {
@@ -246,7 +251,6 @@ button:hover {
     display: flex;
     justify-content: space-between;
     margin-inline: 1rem;
-    border: 1px solid pink;
     margin-top: auto;
     align-items: center;
 }
