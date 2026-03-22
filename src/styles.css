@@ -268,3 +268,133 @@ button:hover {
     justify-content: center;
     align-items: center;
 }
+
+.cuadrocontacto {
+    width: 89rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+    background-color: white;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+    gap: 1.5rem;
+}
+
+.cuadromapa {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.horario {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.horario > h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.horario > p {
+    font-size: 1.5rem;
+}
+
+.cuadromapa > img {
+    height: 25rem;
+    width: 38rem;
+    border: 1px solid green;
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    align-self: center;
+}
+
+.cuadroform {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.contacto > h3 {
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo1,
+.campo2,
+.campo3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo1 > label {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.campo1 > input {
+    height: 2rem;
+    font-size: 1.1rem;
+    margin-right: 2%;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.campo2 > label {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.campo2 > input {
+    height: 2rem;
+    font-size: 1.1rem;
+    margin-right: 2%;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.campo3 > label {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.campo3 > textarea {
+    resize: none;
+    height: 5.6rem;
+    margin-bottom: 1.8rem;
+    font-size: 1.1rem;
+    margin-right: 2%;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.formulario > button {
+    align-self: center;
+    padding-inline: 1rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
