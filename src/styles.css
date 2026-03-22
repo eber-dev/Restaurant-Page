@@ -165,3 +165,53 @@ button:hover {
     height: 2.3rem;
     width: auto;
 }
+
+.cartas_fondos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    border: 1px solid black;
+    grid-auto-flow: column;
+    gap: 1.5rem;
+    margin-inline: 1.5rem;
+}
+
+.fondos {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid violet;
+    overflow: hidden;
+}
+
+.fondos > img {
+    height: 15rem;
+}
+
+.fondos > p {
+    font-size: 1.1rem;
+    text-align: justify;
+    margin-inline: 1rem;
+}
+
+.pedidosfondo {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 1rem;
+    border: 1px solid pink;
+    margin-top: auto;
+    align-items: center;
+}
+
+.pedidosfondo > p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.pedidosfondo > button {
+    height: 3.2rem;
+    width: 3.2rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
