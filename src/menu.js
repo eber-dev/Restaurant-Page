@@ -2,6 +2,12 @@ import ceviche from "./images/ceviche.jpg";
 import anticuchos from "./images/anticuchos.jpg";
 import papashuancaina from "./images/papashuancaina.jpg";
 import roomservice from "./images/roomservice.svg";
+import lomo from "./images/lomosaltado.jpg";
+import tallarin from "./images/tallarinesverdes.jpg";
+import pato from "./images/arrozpato.jpg";
+import carapulcra from "./images/carapulcra.jpg";
+import pollo from "./images/polloalabrasa.jpg";
+import marisco from "./images/arrozmariscos.jpg";
 
 export function loadMenu() {
     const container = document.getElementById("content");
@@ -103,19 +109,124 @@ function cargarfondos() {
     const carta_fondos = document.createElement("div");
     carta_fondos.classList.add("cartas_fondos");
     const fondos1 = document.createElement("div");
+    const lomoimagen = new Image();
+    lomoimagen.src = lomo;
+    const lomotexto = document.createElement("p");
+    lomotexto.textContent =
+        "Un clásico irresistible que fusiona la tradición peruana con influencias chinas. Tiernos trozos de carne de res salteados al wok con cebolla roja, tomate y un toque de sillao, acompañados de papas fritas crujientes y arroz blanco. Un plato jugoso, intenso y lleno de sabor que conquista desde el primer bocado.";
+
+    const pedirfondo1 = document.createElement("div");
+    const precio1 = document.createElement("p");
+    precio1.textContent = "S/20";
+    const boton1 = document.createElement("button");
+
     const fondos2 = document.createElement("div");
+    const tallarinimage = new Image();
+    tallarinimage.src = tallarin;
+    const tallarintexto = document.createElement("p");
+    tallarintexto.textContent =
+        "Una deliciosa fusión de pasta al estilo peruano con una cremosa salsa de albahaca, espinaca y queso, acompañada de un jugoso bistec a la plancha. Un plato vibrante, aromático y lleno de frescura que encanta a todos.";
+
+    const pedirfondo2 = document.createElement("div");
+    const precio2 = document.createElement("p");
+    precio2.textContent = "S/17";
+    const boton2 = document.createElement("button");
+
     const fondos3 = document.createElement("div");
+    const patoimagen = new Image();
+    patoimagen.src = pato;
+    const patotexto = document.createElement("p");
+    patotexto.textContent =
+        "Un plato emblemático del norte peruano, donde el arroz se impregna de culantro fresco, cerveza negra y especias, logrando un sabor profundo e inolvidable. Acompañado de jugoso pato cocido lentamente, cada porción es una experiencia intensa, aromática y llena de tradición.";
+
+    const pedirfondo3 = document.createElement("div");
+    const precio3 = document.createElement("p");
+    precio3.textContent = "S/19";
+    const boton3 = document.createElement("button");
+
     const fondos4 = document.createElement("div");
+    const carapulcraimagen = new Image();
+    carapulcraimagen.src = carapulcra;
+    const carapulcratexto = document.createElement("p");
+    carapulcratexto.textContent =
+        "Uno de los platos más antiguos del Perú, preparado con papa seca, carne de cerdo o pollo, maní y ají panca. Su textura espesa y su sabor ahumado lo convierten en una joya de la cocina tradicional, ideal para paladares exigentes.";
+
+    const pedirfondo4 = document.createElement("div");
+    const precio4 = document.createElement("p");
+    precio4.textContent = "S/15";
+    const boton4 = document.createElement("button");
+
     const fondos5 = document.createElement("div");
+    const polloimagen = new Image();
+    polloimagen.src = pollo;
+    const pollotexto = document.createElement("p");
+    pollotexto.textContent =
+        "El orgullo de la gastronomía peruana: pollo jugoso marinado con especias secretas y cocido lentamente al carbón. Su piel dorada y crocante contrasta con su interior tierno, acompañado de papas fritas y cremas que elevan cada bocado.";
+
+    const pedirfondo5 = document.createElement("div");
+    const precio5 = document.createElement("p");
+    precio5.textContent = "S/40";
+    const boton5 = document.createElement("button");
+
     const fondos6 = document.createElement("div");
+    const mariscoimagen = new Image();
+    mariscoimagen.src = marisco;
+    const mariscotexto = document.createElement("p");
+    mariscotexto.textContent =
+        "Un festín marino lleno de color y sabor, preparado con arroz graneado mezclado con una selección de mariscos frescos, ajíes y especias. Cada cucharada transporta al comensal a la costa peruana, con un equilibrio perfecto entre frescura y sazón.";
+
+    const pedirfondo6 = document.createElement("div");
+    const precio6 = document.createElement("p");
+    precio6.textContent = "S/18";
+    const boton6 = document.createElement("button");
+
+    const totalpedir = [pedirfondo1, pedirfondo2, pedirfondo3, pedirfondo4, pedirfondo5, pedirfondo6];
+    totalpedir.forEach((elemento) => elemento.classList.add("pedidosfondo"));
     const totalfondos = [fondos1, fondos2, fondos3, fondos4, fondos5, fondos6];
     totalfondos.forEach((elemento) => elemento.classList.add("fondos"));
+    const totalbotones = [boton1, boton2, boton3, boton4, boton5, boton6];
+    totalbotones.forEach((elemento) => {
+        const img = document.createElement("img");
+        img.classList.add("iconopedir");
+        img.src = roomservice;
+        elemento.appendChild(img);
+    });
     carta_fondos.appendChild(fondos1);
+    fondos1.appendChild(lomoimagen);
+    fondos1.appendChild(lomotexto);
+    fondos1.appendChild(pedirfondo1);
+    pedirfondo1.appendChild(precio1);
+    pedirfondo1.appendChild(boton1);
     carta_fondos.appendChild(fondos2);
+    fondos2.appendChild(tallarinimage);
+    fondos2.appendChild(tallarintexto);
+    fondos2.appendChild(pedirfondo2);
+    pedirfondo2.appendChild(precio2);
+    pedirfondo2.appendChild(boton2);
     carta_fondos.appendChild(fondos3);
+    fondos3.appendChild(patoimagen);
+    fondos3.appendChild(patotexto);
+    fondos3.appendChild(pedirfondo3);
+    pedirfondo3.appendChild(precio3);
+    pedirfondo3.appendChild(boton3);
     carta_fondos.appendChild(fondos4);
+    fondos4.appendChild(carapulcraimagen);
+    fondos4.appendChild(carapulcratexto);
+    fondos4.appendChild(pedirfondo4);
+    pedirfondo4.appendChild(precio4);
+    pedirfondo4.appendChild(boton4);
     carta_fondos.appendChild(fondos5);
+    fondos5.appendChild(polloimagen);
+    fondos5.appendChild(pollotexto);
+    fondos5.appendChild(pedirfondo5);
+    pedirfondo5.appendChild(precio5);
+    pedirfondo5.appendChild(boton5);
     carta_fondos.appendChild(fondos6);
+    fondos6.appendChild(mariscoimagen);
+    fondos6.appendChild(mariscotexto);
+    fondos6.appendChild(pedirfondo6);
+    pedirfondo6.appendChild(precio6);
+    pedirfondo6.appendChild(boton6);
     return carta_fondos;
 }
 
